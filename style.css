@@ -1,0 +1,167 @@
+/* importerer fonter */
+@font-face {
+  font-family: "Jolly Lodger"; /*a name to be used later*/
+  src: url("fonter/jolly-lodger/JollyLodger-Regular.ttf"); /*URL to font*/
+}
+
+@font-face {
+  font-family: "Julee"; /*a name to be used later*/
+  src: url("fonter/Julee/Julee-Regular.ttf"); /*URL to font*/
+}
+
+/* css resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  background-color: #f2e3e3;
+}
+
+h1,
+h2,
+h3,
+h4,
+.kjopKnapp,
+.handlingsKnapp {
+  font-family: "Jolly Lodger";
+}
+
+p {
+  font-family: "Julee";
+}
+
+h1 {
+  font-size: 128px;
+  color: #fb66ff;
+  -webkit-text-stroke: 2px #20d4ff;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 5%;
+}
+
+main {
+  display: flex;
+  margin-inline: 3%;
+  gap: 2%;
+}
+
+button {
+  background-color: #ffff80;
+  border-radius: 8px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:enabled:active {
+  background-color: #20d4ff;
+  color: rgb(0, 0, 0);
+  transform: scale(110%); /* Optional: a slight visual effect for pressing */
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border: 2px solid rgb(188, 188, 188);
+}
+
+.ramme {
+  border: #20d4ff solid 8px;
+  border-radius: 20px;
+  margin-bottom: 3vh;
+}
+
+#ingredienserPrisOgSolgt {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+#roreVaflerOppgraderinger {
+  flex-basis: 650px;
+  flex-grow: 1;
+}
+
+.ingrediens,
+.handling,
+#prisOgKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3vh;
+  align-items: center;
+}
+
+#prisKnappBeholder {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+h3:first-child {
+  flex-basis: 150px;
+  /* background-color: #FB66FF; */
+  flex-grow: 0;
+}
+
+/* .ingrediens > * {
+    border: #000000 2px solid;
+} */
+.kjopKnapp {
+  font-size: 40px;
+  flex-basis: 180px;
+  flex-grow: 0;
+}
+
+.handlingsKnapp {
+  font-size: 48px;
+  flex-basis: 200px;
+  flex-grow: 0;
+}
+
+.prisKnapp {
+  font-size: 32px;
+  flex-basis: 10px;
+  padding-inline: 5px;
+  flex-grow: 0;
+}
+
+.viserAntall {
+  flex-basis: 200px;
+}
+
+#solgtAlert {
+  background-color: #63f77b;
+  border-radius: 20px;
+  /* display: inline-block; */
+  width: 270px;
+  text-align: center;
+  padding: 1vh;
+  margin: 1vh auto;
+}
+
+.inactive {
+  background-color: #cdcdcd;
+  color: #8d8d8d;
+  border-radius: 10px;
+  margin: 1vh;
+  text-align: center;
+  padding: 1vh;
+}

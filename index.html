@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stians vafler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Stians vafler</h1>
+      <h3>Saldo: <span id="viserSaldo">bkjb</span> kr</h3>
+    </header>
+    <main>
+      <div id="ingredienserPrisOgSolgt">
+        <div class="ramme" id="ingredienser">
+          <h2>Ingredienser</h2>
+          <div class="ingrediens">
+            <h3>Melk:</h3>
+            <h3>
+              <span class="viserAntall" id="viserAntallMelk">klhj</span> l
+            </h3>
+            <button onclick="kjopMelk()" class="kjopKnapp">
+              Kjøp (<span id="viserPrisMelk">hoh</span>)
+            </button>
+          </div>
+          <div class="ingrediens">
+            <h3>Mel:</h3>
+            <h3><span class="viserAntall" id="viserAntallMel">nol</span> kg</h3>
+            <button onclick="kjopMel()" class="kjopKnapp">
+              Kjøp (<span id="viserPrisMel">hoh</span>)
+            </button>
+          </div>
+          <div class="ingrediens">
+            <h3>Egg:</h3>
+            <h3>
+              <span class="viserAntall" id="viserAntallEgg">kjb</span> stk
+            </h3>
+            <button onclick="kjopEgg()" class="kjopKnapp">
+              Kjøp (<span id="viserPrisEgg">hoh</span>)
+            </button>
+          </div>
+          <div class="ingrediens">
+            <h3>Syltetøy:</h3>
+            <h3>
+              <span class="viserAntall" id="viserAntallSyltetoy">bkjb</span> g
+            </h3>
+            <button onclick="kjopSyltetoy()" class="kjopKnapp">
+              Kjøp (<span id="viserPrisSyltetoy">hoh</span>)
+            </button>
+          </div>
+        </div>
+
+        <div class="ramme" id="prisOgKnapper">
+          <h2>Pris vaffel: <span id="viserPris">jbl</span> kr</h2>
+          <div id="prisKnappBeholder">
+            <button onclick="senkPris()" class="prisKnapp">-</button>
+            <button onclick="okPris()" class="prisKnapp">+</button>
+          </div>
+        </div>
+        <h2 id="solgtAlert">Vaffel solgt!</h2>
+      </div>
+      <div id="roreVaflerOppgraderinger">
+        <div class="ramme" id="roreOgVafler">
+          <div class="handling">
+            <h2>Ferdig røre: <span id="viserAntallRore">nlbnl</span> øser</h2>
+            <button
+              onclick="lagRore()"
+              id="lagRoreKnapp"
+              class="handlingsKnapp"
+            >
+              Lag røre
+            </button>
+          </div>
+          <div class="handling">
+            <h2>
+              Ferdige vafler: <span id="viserAntallVafler">bkv</span> plater
+            </h2>
+            <button
+              onclick="stekVafler()"
+              id="stekVaflerKnapp"
+              class="handlingsKnapp"
+            >
+              Stek vaffel
+            </button>
+          </div>
+        </div>
+        <div class="ramme" id="oppgraderinger">
+          <h2>Oppgraderinger</h2>
+          <div class="oppgradering inactive">
+            <h4>
+              Dobbelt vaffeljern (<span id="viserPrisDobbeltjern">100</span> kr)
+            </h4>
+            <p>For å steke to vafler av gangen</p>
+          </div>
+          <div class="oppgradering inactive">
+            <h4>
+              Bedre oppskrift (<span id="viserPrisBedreOppskrift">150</span> kr)
+            </h4>
+            <p>For å gjøre vaflene mer attraktive</p>
+          </div>
+          <div class="oppgradering inactive">
+            <h4>Reklame (<span id="viserPrisReklame">200</span> kr)</h4>
+            <p>For å gjøre vaflene enda mer attraktive</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="program.js"></script>
+  </body>
+</html>
